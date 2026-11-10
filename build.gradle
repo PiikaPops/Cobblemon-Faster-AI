@@ -1,0 +1,84 @@
+plugins {
+    id 'dev.architectury.loom' version '1.13.469'
+    id 'java'
+}
+
+// Release build: ./gradlew build
+// Benchmark build (adds the /fasterai bench commands, for test worlds only): ./gradlew build -Pbench
+def benchBuild = project.hasProperty('bench')
+
+version = project.mod_version + (benchBuild ? '-bench' : '')
+group = project.maven_group
+base { archivesName = project.archives_base_name }
+
+repositories {
+    mavenCentral()
+    maven { name = 'Fabric'; url = 'https://maven.fabricmc.net/' }
+    maven { name = 'Cobblemon'; url = 'https://maven.impactdev.net/repository/development/' }
+}
+
+if (benchBuild) {
+    sourceSets.main.java.srcDir 'src/bench/java'
+    sourceSets.main.resources.srcDir 'src/bench/resources'
+}
+
+dependencies {
+    minecraft "com.mojang:minecraft:${project.minecraft_version}"
+    mappings loom.officialMojangMappings()
+    modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
+    modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
+
+    // Cobblemon is provided by the game at runtime. Compiled against the maven artifact, or a local jar if
+    // `cobblemon_jar` is set (e.g. in ~/.gradle/gradle.properties).
+    if (project.hasProperty('cobblemon_jar')) {
+        modCompileOnly files(project.cobblemon_jar)
+    } else {
+        modCompileOnly("com.cobblemon:fabric:${project.cobblemon_version}") { transitive = false }
+    }
+    // Cobblemon's API exposes Kotlin types (Unit, Function1...).
+    compileOnly "org.jetbrains.kotlin:kotlin-stdlib:2.0.21"
+}
+
+java {
+    toolchain { languageVersion = JavaLanguageVersion.of(21) }
+    withSourcesJar()
+}
+
+tasks.withType(JavaCompile).configureEach {
+    it.options.release = 21
+    it.options.encoding = 'UTF-8'
+}
+
+processResources {
+    def props = [
+            version        : project.version,
+            benchEntrypoint: benchBuild ? ', "fr.coquelicot.fasterai.bench.BenchInit"' : '',
+            benchMixins    : benchBuild ? ', "cobblemon_faster_ai.bench.mixins.json"' : ''
+    ]
+    inputs.properties props
+    filesMatching("fabric.mod.json") {
+        expand props
+    }
+}
+
+// Copies the remapped jar into a mods folder, removing older builds of this mod first.
+def deployTo = { String taskName, String dir, String desc, boolean needsBench ->
+    tasks.register(taskName, Copy) {
+        group = 'distribution'
+        description = desc
+        dependsOn remapJar
+        from remapJar.archiveFile
+        into dir
+        doFirst {
+            if (needsBench && !benchBuild) throw new GradleException("$taskName needs the benchmark build: add -Pbench")
+            fileTree(dir).matching { include "${project.archives_base_name}-*.jar" }.each { it.delete() }
+        }
+    }
+}
+// Both are only available when their folder is set in ~/.gradle/gradle.properties.
+if (project.hasProperty('instance_mods_dir')) {
+    deployTo('deployToInstance', project.instance_mods_dir, 'Copies the release jar into a local game instance.', false)
+}
+if (project.hasProperty('bench_mods_dir')) {
+    deployTo('deployToBench', project.bench_mods_dir, 'Copies the benchmark build into a local benchmark server (needs -Pbench).', true)
+}

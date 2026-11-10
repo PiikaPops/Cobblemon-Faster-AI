@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "id": "cobblemon_faster_ai",
+  "version": "${version}",
+  "name": "Cobblemon Faster AI",
+  "description": "Makes large numbers of wild Pokémon cheaper for the server (AI, movement, collisions) without changing how they behave. Optional, off by default: far-away wild Pokémon in slow motion while the server is overloaded. Server-side; optional on clients.",
+  "authors": ["coquelicot"],
+  "license": "All-Rights-Reserved",
+  "environment": "*",
+  "entrypoints": {
+    "main": ["fr.coquelicot.fasterai.CobblemonFasterAI"${benchEntrypoint}]
+  },
+  "mixins": ["cobblemon_faster_ai.mixins.json"${benchMixins}],
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "minecraft": "~1.21.1",
+    "fabric-api": "*",
+    "cobblemon": "~1.8.4"
+  }
+}

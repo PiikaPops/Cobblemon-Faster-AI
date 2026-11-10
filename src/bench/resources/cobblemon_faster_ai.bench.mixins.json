@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "fr.coquelicot.fasterai.bench.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "BrainTasksAccessor",
+    "PokemonTickTimingMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

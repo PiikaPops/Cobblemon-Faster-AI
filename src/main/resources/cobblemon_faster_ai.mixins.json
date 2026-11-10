@@ -1,0 +1,25 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "fr.coquelicot.fasterai.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "BehaviorAccessor",
+    "BrainMixin",
+    "EntityFluidMixin",
+    "EntityGroundMixin",
+    "EntityMoveFireMixin",
+    "FindHerdLeaderMixin",
+    "NearestLivingEntitySensorMixin",
+    "NearestVisibleLivingEntitiesAccessor",
+    "PalettedContainerMixin",
+    "PokemonEntityMixin",
+    "PokemonMixin",
+    "PokemonMoveControlMixin",
+    "SensorAccessor",
+    "ServerLevelMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

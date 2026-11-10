@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" font-family="'Segoe UI', system-ui, sans-serif">
+<rect width="1600" height="900" fill="#1a1a19"/>
+<text x="72.0" y="112.0" font-size="44" font-weight="700" fill="#f0efec" text-anchor="start">Optional far slow motion: average server tick</text>
+<text x="72.0" y="160.0" font-size="26" font-weight="400" fill="#c3c2b7" text-anchor="start">3000 wild Pokémon; those far from every player get 1 tick in N. Off by default. Lower is better.</text>
+<rect x="72" y="199" width="28" height="28" rx="5" fill="#d95926"/>
+<text x="112.0" y="222.0" font-size="26" font-weight="400" fill="#f0efec" text-anchor="start">Cobblemon Faster AI</text>
+<rect x="429" y="199" width="28" height="28" rx="5" fill="#199e70"/>
+<text x="469.8" y="222.0" font-size="26" font-weight="400" fill="#f0efec" text-anchor="start">Faster AI + far slow motion</text>
+<line x1="402.0" y1="262" x2="402.0" y2="770" stroke="#55554f" stroke-width="2"/>
+<text x="402.0" y="802.0" font-size="22" font-weight="400" fill="#898781" text-anchor="middle">0 ms</text>
+<line x1="618.5" y1="262" x2="618.5" y2="770" stroke="#2c2c2a" stroke-width="1.5"/>
+<text x="618.5" y="802.0" font-size="22" font-weight="400" fill="#898781" text-anchor="middle">10 ms</text>
+<line x1="835.0" y1="262" x2="835.0" y2="770" stroke="#2c2c2a" stroke-width="1.5"/>
+<text x="835.0" y="802.0" font-size="22" font-weight="400" fill="#898781" text-anchor="middle">20 ms</text>
+<line x1="1051.5" y1="262" x2="1051.5" y2="770" stroke="#2c2c2a" stroke-width="1.5"/>
+<text x="1051.5" y="802.0" font-size="22" font-weight="400" fill="#898781" text-anchor="middle">30 ms</text>
+<line x1="1268.0" y1="262" x2="1268.0" y2="770" stroke="#2c2c2a" stroke-width="1.5"/>
+<text x="1268.0" y="802.0" font-size="22" font-weight="400" fill="#898781" text-anchor="middle">40 ms</text>
+<text x="72.0" y="385.0" font-size="32" font-weight="700" fill="#f0efec" text-anchor="start">Beyond 48 blocks</text>
+<text x="72.0" y="419.0" font-size="22" font-weight="400" fill="#c3c2b7" text-anchor="start">1 tick in 2</text>
+<path d="M402.0 347.0 H1163.6 Q1169.6 347.0 1169.6 353.0 V381.0 Q1169.6 387.0 1163.6 387.0 H402.0 Z" fill="#d95926"/>
+<text x="1185.6" y="376.0" font-size="26" font-weight="700" fill="#f0efec" text-anchor="start">35.5 ms</text>
+<path d="M402.0 391.0 H1025.2 Q1031.2 391.0 1031.2 397.0 V425.0 Q1031.2 431.0 1025.2 431.0 H402.0 Z" fill="#199e70"/>
+<text x="1047.2" y="420.0" font-size="26" font-weight="700" fill="#f0efec" text-anchor="start">29.1 ms</text>
+<text x="1528.0" y="400.0" font-size="32" font-weight="700" fill="#f0efec" text-anchor="end">18% shorter</text>
+<text x="72.0" y="639.0" font-size="32" font-weight="700" fill="#f0efec" text-anchor="start">Beyond 32 blocks</text>
+<text x="72.0" y="673.0" font-size="22" font-weight="400" fill="#c3c2b7" text-anchor="start">1 tick in 4</text>
+<path d="M402.0 601.0 H1171.5 Q1177.5 601.0 1177.5 607.0 V635.0 Q1177.5 641.0 1171.5 641.0 H402.0 Z" fill="#d95926"/>
+<text x="1193.5" y="630.0" font-size="26" font-weight="700" fill="#f0efec" text-anchor="start">35.8 ms</text>
+<path d="M402.0 645.0 H876.5 Q882.5 645.0 882.5 651.0 V679.0 Q882.5 685.0 876.5 685.0 H402.0 Z" fill="#199e70"/>
+<text x="898.5" y="674.0" font-size="26" font-weight="700" fill="#f0efec" text-anchor="start">22.2 ms</text>
+<text x="1528.0" y="654.0" font-size="32" font-weight="700" fill="#f0efec" text-anchor="end">38% shorter</text>
+<text x="72.0" y="858.0" font-size="22" font-weight="400" fill="#898781" text-anchor="start">Slow motion switched off and on every 100 ticks in the same run. Owned, battling, hurt or nearby Pokémon are never slowed.</text>
+</svg>

@@ -1,0 +1,35 @@
+# Local settings (copy gradle.properties.example)
+gradle.properties
+
+# Gradle / Loom
+.gradle/
+build/
+out/
+bin/
+run/
+remappedSrc/
+.architectury-transformer/
+
+# IDEs
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+.project
+.classpath
+.settings/
+.factorypath
+
+# Logs
+*.log
+logs/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Bench tooling caches
+tools/bench/mappings.json
+*.stacks.json

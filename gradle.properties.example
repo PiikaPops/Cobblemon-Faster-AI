@@ -1,0 +1,18 @@
+org.gradle.jvmargs=-Xmx2G
+org.gradle.parallel=true
+
+minecraft_version=1.21.1
+loader_version=0.16.10
+fabric_version=0.116.0+1.21.1
+
+mod_version=0.2.0
+maven_group=fr.coquelicot
+archives_base_name=cobblemon-faster-ai
+
+# Cobblemon version compiled against (downloaded from the Cobblemon maven).
+cobblemon_version=1.8.4+1.21.1
+
+# Copy this file to gradle.properties (not tracked by git) and add your machine-specific settings there:
+#   cobblemon_jar=<path to a local Cobblemon jar>   (optional, used instead of the maven artifact)
+#   instance_mods_dir=<mods folder of a local game instance>   (enables deployToInstance)
+#   bench_mods_dir=<mods folder of a local benchmark server>   (enables deployToBench)

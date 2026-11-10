@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" font-family="'Segoe UI', system-ui, sans-serif">
+<rect width="1600" height="900" fill="#1a1a19"/>
+<text x="72.0" y="112.0" font-size="44" font-weight="700" fill="#f0efec" text-anchor="start">Average server tick with 3000 wild Pokémon</text>
+<text x="72.0" y="160.0" font-size="26" font-weight="400" fill="#c3c2b7" text-anchor="start">Time the server needs for one tick, three ways of spreading the Pokémon. Lower is better.</text>
+<rect x="72" y="199" width="28" height="28" rx="5" fill="#3987e5"/>
+<text x="112.0" y="222.0" font-size="26" font-weight="400" fill="#f0efec" text-anchor="start">Cobblemon 1.8.4 alone</text>
+<rect x="458" y="199" width="28" height="28" rx="5" fill="#d95926"/>
+<text x="498.2" y="222.0" font-size="26" font-weight="400" fill="#f0efec" text-anchor="start">With Cobblemon Faster AI</text>
+<line x1="402.0" y1="262" x2="402.0" y2="770" stroke="#55554f" stroke-width="2"/>
+<text x="402.0" y="802.0" font-size="22" font-weight="400" fill="#898781" text-anchor="middle">0 ms</text>
+<line x1="546.3" y1="262" x2="546.3" y2="770" stroke="#2c2c2a" stroke-width="1.5"/>
+<text x="546.3" y="802.0" font-size="22" font-weight="400" fill="#898781" text-anchor="middle">10 ms</text>
+<line x1="690.7" y1="262" x2="690.7" y2="770" stroke="#2c2c2a" stroke-width="1.5"/>
+<text x="690.7" y="802.0" font-size="22" font-weight="400" fill="#898781" text-anchor="middle">20 ms</text>
+<line x1="835.0" y1="262" x2="835.0" y2="770" stroke="#2c2c2a" stroke-width="1.5"/>
+<text x="835.0" y="802.0" font-size="22" font-weight="400" fill="#898781" text-anchor="middle">30 ms</text>
+<line x1="979.3" y1="262" x2="979.3" y2="770" stroke="#2c2c2a" stroke-width="1.5"/>
+<text x="979.3" y="802.0" font-size="22" font-weight="400" fill="#898781" text-anchor="middle">40 ms</text>
+<line x1="1123.7" y1="262" x2="1123.7" y2="770" stroke="#2c2c2a" stroke-width="1.5"/>
+<text x="1123.7" y="802.0" font-size="22" font-weight="400" fill="#898781" text-anchor="middle">50 ms</text>
+<line x1="1268.0" y1="262" x2="1268.0" y2="770" stroke="#2c2c2a" stroke-width="1.5"/>
+<text x="1268.0" y="802.0" font-size="22" font-weight="400" fill="#898781" text-anchor="middle">60 ms</text>
+<text x="72.0" y="342.7" font-size="32" font-weight="700" fill="#f0efec" text-anchor="start">Mixed crowd</text>
+<text x="72.0" y="376.7" font-size="22" font-weight="400" fill="#c3c2b7" text-anchor="start">scattered + 2 chunks of 100</text>
+<path d="M402.0 304.7 H1044.6 Q1050.6 304.7 1050.6 310.7 V338.7 Q1050.6 344.7 1044.6 344.7 H402.0 Z" fill="#3987e5"/>
+<text x="1066.6" y="333.7" font-size="26" font-weight="700" fill="#f0efec" text-anchor="start">44.9 ms</text>
+<path d="M402.0 348.7 H919.8 Q925.8 348.7 925.8 354.7 V382.7 Q925.8 388.7 919.8 388.7 H402.0 Z" fill="#d95926"/>
+<text x="941.8" y="377.7" font-size="26" font-weight="700" fill="#f0efec" text-anchor="start">36.3 ms</text>
+<text x="1528.0" y="357.7" font-size="32" font-weight="700" fill="#f0efec" text-anchor="end">19% shorter</text>
+<text x="72.0" y="512.0" font-size="32" font-weight="700" fill="#f0efec" text-anchor="start">Packed</text>
+<text x="72.0" y="546.0" font-size="22" font-weight="400" fill="#c3c2b7" text-anchor="start">125 per chunk</text>
+<path d="M402.0 474.0 H1104.1 Q1110.1 474.0 1110.1 480.0 V508.0 Q1110.1 514.0 1104.1 514.0 H402.0 Z" fill="#3987e5"/>
+<text x="1126.1" y="503.0" font-size="26" font-weight="700" fill="#f0efec" text-anchor="start">49.1 ms</text>
+<path d="M402.0 518.0 H938.3 Q944.3 518.0 944.3 524.0 V552.0 Q944.3 558.0 938.3 558.0 H402.0 Z" fill="#d95926"/>
+<text x="960.3" y="547.0" font-size="26" font-weight="700" fill="#f0efec" text-anchor="start">37.6 ms</text>
+<text x="1528.0" y="527.0" font-size="32" font-weight="700" fill="#f0efec" text-anchor="end">23% shorter</text>
+<text x="72.0" y="681.3" font-size="32" font-weight="700" fill="#f0efec" text-anchor="start">Scattered</text>
+<text x="72.0" y="715.3" font-size="22" font-weight="400" fill="#c3c2b7" text-anchor="start">500 around each player</text>
+<path d="M402.0 643.3 H1062.2 Q1068.2 643.3 1068.2 649.3 V677.3 Q1068.2 683.3 1062.2 683.3 H402.0 Z" fill="#3987e5"/>
+<text x="1084.2" y="672.3" font-size="26" font-weight="700" fill="#f0efec" text-anchor="start">46.2 ms</text>
+<path d="M402.0 687.3 H940.2 Q946.2 687.3 946.2 693.3 V721.3 Q946.2 727.3 940.2 727.3 H402.0 Z" fill="#d95926"/>
+<text x="962.2" y="716.3" font-size="26" font-weight="700" fill="#f0efec" text-anchor="start">37.7 ms</text>
+<text x="1528.0" y="696.3" font-size="32" font-weight="700" fill="#f0efec" text-anchor="end">18% shorter</text>
+<text x="72.0" y="858.0" font-size="22" font-weight="400" fill="#898781" text-anchor="start">Mod switched off and on every 100 ticks in the same run: same world, same Pokémon. Lithium installed on both sides.</text>
+</svg>

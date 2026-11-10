@@ -1,0 +1,259 @@
+{
+  "type": "crowd",
+  "label": "combo_farm",
+  "cobblemonVersion": "1.8.4+1.21.1",
+  "sites": 6,
+  "perSite": 300,
+  "hotspotsPerSite": 2,
+  "hotspotSize": 100,
+  "ticks": 2400,
+  "block": 100,
+  "seed": 21,
+  "spawned": 3000,
+  "aliveAtEnd": 2897,
+  "snacks": 96,
+  "snackSpeed": 20,
+  "snackFarm": true,
+  "snackBaits": "[cobblemon:wacan_berry, cobblemon:kelpsy_berry, cobblemon:oran_berry]",
+  "fasterSnacksAlternated": true,
+  "off": {
+    "tickTime": {
+      "count": 1200,
+      "totalMs": 73643.153,
+      "meanMs": 61.369,
+      "p50Ms": 55.542,
+      "p95Ms": 111.608,
+      "p99Ms": 160.915,
+      "maxMs": 394.397
+    },
+    "pokemonTimePerTick": {
+      "count": 1200,
+      "totalMs": 64171.426,
+      "meanMs": 53.476,
+      "p50Ms": 48.263,
+      "p95Ms": 88.386,
+      "p99Ms": 152.728,
+      "maxMs": 184.583
+    },
+    "pokemonTicks": 3486692,
+    "usPerPokemonTick": 18.405,
+    "tps": 16.046,
+    "snackTimePerTick": {
+      "count": 1200,
+      "totalMs": 695.199,
+      "meanMs": 0.579,
+      "p50Ms": 0.002,
+      "p95Ms": 0.097,
+      "p99Ms": 21.825,
+      "maxMs": 29.844
+    },
+    "snackRandomTicks": 1653,
+    "snackSpawns": 37,
+    "deferredBites": 0
+  },
+  "on": {
+    "tickTime": {
+      "count": 1200,
+      "totalMs": 63206.037,
+      "meanMs": 52.672,
+      "p50Ms": 51.787,
+      "p95Ms": 68.369,
+      "p99Ms": 75.436,
+      "maxMs": 88.449
+    },
+    "pokemonTimePerTick": {
+      "count": 1200,
+      "totalMs": 54185.145,
+      "meanMs": 45.154,
+      "p50Ms": 44.158,
+      "p95Ms": 60.099,
+      "p99Ms": 66.167,
+      "maxMs": 80.213
+    },
+    "pokemonTicks": 3484661,
+    "usPerPokemonTick": 15.55,
+    "tps": 18.227,
+    "snackTimePerTick": {
+      "count": 1200,
+      "totalMs": 260.664,
+      "meanMs": 0.217,
+      "p50Ms": 0.003,
+      "p95Ms": 0.094,
+      "p99Ms": 7.199,
+      "maxMs": 13.492
+    },
+    "snackRandomTicks": 1683,
+    "snackSpawns": 35,
+    "deferredBites": 0
+  },
+  "series": [
+    {
+      "mode": 0,
+      "tickMeanMs": 60.7,
+      "pokemonUs": 18.048,
+      "pokemonTicked": 2922,
+      "alive": 2917
+    },
+    {
+      "mode": 1,
+      "tickMeanMs": 51.463,
+      "pokemonUs": 15.071,
+      "pokemonTicked": 2919,
+      "alive": 2914
+    },
+    {
+      "mode": 0,
+      "tickMeanMs": 60.888,
+      "pokemonUs": 18.396,
+      "pokemonTicked": 2916,
+      "alive": 2912
+    },
+    {
+      "mode": 1,
+      "tickMeanMs": 53.565,
+      "pokemonUs": 15.821,
+      "pokemonTicked": 2914,
+      "alive": 2909
+    },
+    {
+      "mode": 0,
+      "tickMeanMs": 68.144,
+      "pokemonUs": 20.43,
+      "pokemonTicked": 2910,
+      "alive": 2909
+    },
+    {
+      "mode": 1,
+      "tickMeanMs": 51.781,
+      "pokemonUs": 15.177,
+      "pokemonTicked": 2909,
+      "alive": 2908
+    },
+    {
+      "mode": 0,
+      "tickMeanMs": 57.895,
+      "pokemonUs": 17.285,
+      "pokemonTicked": 2909,
+      "alive": 2908
+    },
+    {
+      "mode": 1,
+      "tickMeanMs": 51.019,
+      "pokemonUs": 14.694,
+      "pokemonTicked": 2909,
+      "alive": 2908
+    },
+    {
+      "mode": 0,
+      "tickMeanMs": 58.493,
+      "pokemonUs": 17.586,
+      "pokemonTicked": 2909,
+      "alive": 2906
+    },
+    {
+      "mode": 1,
+      "tickMeanMs": 51.847,
+      "pokemonUs": 15.35,
+      "pokemonTicked": 2907,
+      "alive": 2905
+    },
+    {
+      "mode": 0,
+      "tickMeanMs": 58.131,
+      "pokemonUs": 17.313,
+      "pokemonTicked": 2906,
+      "alive": 2904
+    },
+    {
+      "mode": 1,
+      "tickMeanMs": 48.064,
+      "pokemonUs": 13.86,
+      "pokemonTicked": 2905,
+      "alive": 2904
+    },
+    {
+      "mode": 0,
+      "tickMeanMs": 54.114,
+      "pokemonUs": 16.393,
+      "pokemonTicked": 2905,
+      "alive": 2904
+    },
+    {
+      "mode": 1,
+      "tickMeanMs": 55.719,
+      "pokemonUs": 16.621,
+      "pokemonTicked": 2904,
+      "alive": 2903
+    },
+    {
+      "mode": 0,
+      "tickMeanMs": 67.666,
+      "pokemonUs": 19.495,
+      "pokemonTicked": 2902,
+      "alive": 2902
+    },
+    {
+      "mode": 1,
+      "tickMeanMs": 59.006,
+      "pokemonUs": 17.66,
+      "pokemonTicked": 2901,
+      "alive": 2902
+    },
+    {
+      "mode": 0,
+      "tickMeanMs": 69.979,
+      "pokemonUs": 21.209,
+      "pokemonTicked": 2900,
+      "alive": 2902
+    },
+    {
+      "mode": 1,
+      "tickMeanMs": 54.888,
+      "pokemonUs": 16.274,
+      "pokemonTicked": 2899,
+      "alive": 2902
+    },
+    {
+      "mode": 0,
+      "tickMeanMs": 59.702,
+      "pokemonUs": 17.966,
+      "pokemonTicked": 2898,
+      "alive": 2901
+    },
+    {
+      "mode": 1,
+      "tickMeanMs": 52.084,
+      "pokemonUs": 15.5,
+      "pokemonTicked": 2896,
+      "alive": 2900
+    },
+    {
+      "mode": 0,
+      "tickMeanMs": 59.196,
+      "pokemonUs": 17.982,
+      "pokemonTicked": 2894,
+      "alive": 2899
+    },
+    {
+      "mode": 1,
+      "tickMeanMs": 54.093,
+      "pokemonUs": 16.154,
+      "pokemonTicked": 2892,
+      "alive": 2899
+    },
+    {
+      "mode": 0,
+      "tickMeanMs": 61.521,
+      "pokemonUs": 18.759,
+      "pokemonTicked": 2891,
+      "alive": 2899
+    },
+    {
+      "mode": 1,
+      "tickMeanMs": 48.531,
+      "pokemonUs": 14.416,
+      "pokemonTicked": 2887,
+      "alive": 2897
+    }
+  ]
+}

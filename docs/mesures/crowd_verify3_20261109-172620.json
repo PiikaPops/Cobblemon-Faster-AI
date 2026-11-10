@@ -1,0 +1,102 @@
+{
+  "type": "crowd",
+  "label": "verify3",
+  "cobblemonVersion": "1.8.4+1.21.1",
+  "sites": 6,
+  "perSite": 300,
+  "hotspotsPerSite": 2,
+  "hotspotSize": 100,
+  "ticks": 600,
+  "block": 100,
+  "seed": 7,
+  "spawned": 3000,
+  "aliveAtEnd": 2905,
+  "off": {
+    "tickTime": {
+      "count": 0,
+      "totalMs": 0.0,
+      "meanMs": 0.0,
+      "p50Ms": 0.0,
+      "p95Ms": 0.0,
+      "p99Ms": 0.0,
+      "maxMs": 0.0
+    },
+    "pokemonTimePerTick": {
+      "count": 0,
+      "totalMs": 0.0,
+      "meanMs": 0.0,
+      "p50Ms": 0.0,
+      "p95Ms": 0.0,
+      "p99Ms": 0.0,
+      "maxMs": 0.0
+    },
+    "pokemonTicks": 0,
+    "usPerPokemonTick": 0.0
+  },
+  "on": {
+    "tickTime": {
+      "count": 600,
+      "totalMs": 60759.23,
+      "meanMs": 101.265,
+      "p50Ms": 93.898,
+      "p95Ms": 124.586,
+      "p99Ms": 237.398,
+      "maxMs": 274.845
+    },
+    "pokemonTimePerTick": {
+      "count": 600,
+      "totalMs": 55394.562,
+      "meanMs": 92.324,
+      "p50Ms": 84.97,
+      "p95Ms": 115.949,
+      "p99Ms": 229.104,
+      "maxMs": 265.841
+    },
+    "pokemonTicks": 1746871,
+    "usPerPokemonTick": 31.711
+  },
+  "series": [
+    {
+      "mode": 1,
+      "tickMeanMs": 102.192,
+      "pokemonUs": 31.907,
+      "pokemonTicked": 2918,
+      "alive": 2913
+    },
+    {
+      "mode": 1,
+      "tickMeanMs": 100.653,
+      "pokemonUs": 31.47,
+      "pokemonTicked": 2915,
+      "alive": 2910
+    },
+    {
+      "mode": 1,
+      "tickMeanMs": 98.136,
+      "pokemonUs": 30.767,
+      "pokemonTicked": 2912,
+      "alive": 2908
+    },
+    {
+      "mode": 1,
+      "tickMeanMs": 98.93,
+      "pokemonUs": 31.008,
+      "pokemonTicked": 2909,
+      "alive": 2907
+    },
+    {
+      "mode": 1,
+      "tickMeanMs": 101.604,
+      "pokemonUs": 31.884,
+      "pokemonTicked": 2907,
+      "alive": 2905
+    },
+    {
+      "mode": 1,
+      "tickMeanMs": 106.077,
+      "pokemonUs": 33.232,
+      "pokemonTicked": 2904,
+      "alive": 2905
+    }
+  ]
+}
